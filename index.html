@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <?php require("../controleur/controleur.php")?>
+    <title>Le portfoliox</title>
+</head>
+<body>
+    
+
+    <header>
+
+
+      <nav class="nav">
+        <a href="#" class="logo">Portfolio</a>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="#">Accueil</a>
+          <a href="#projetscroll">Projets</a>
+          <a href="#compscroll">Compétences</a>
+          <a href="#contactscroll">Contact</a>
+        </div>
+      </nav>
+
+
+    </header>
+
+
+  
+  <div id="skills">
+    <article id="skillsarticle">
+        <div>
+        <h1>Pierre-Marie Desole <br> Etudiant à l'IUT de Corse <br> </h1> 
+        <h3>
+            Salut ! Je m'appelle Pierre-Marie !<br> J'ai 18 ans et je suis en première année de BUT MMI. <br>
+            J'aime les jeux vidéos, le codage, le graphisme aussi, <br> et plus tard j'aspire à être développeur,<br> designeur ou programmateur web. <br> <br>
+            J'ai obtenu mon baccalauréat STI2D option SIN, <br> ce qui m'a donner l'envie de continuer dans un cursus tel que MMI.
+        </h3>
+
+        <div id="moi">        
+            <img src="img/nini.png"  alt="photodemoi">    
+    </div>
+
+</div>
+
+</div>
+
+    </article>
+
+    <div id="projetscroll"></div>
+    <div id="projects">
+      <article id="projetsarticle">
+
+<div>
+            <h1>Mes projets :</h1>
+             
+
+        <div id="conteneur1">
+       
+            <div class="avion">
+                <p><img alt="Survol" height="202px" width="326px" onmouseout="this.src='img/avion.jpg';
+                    " onmouseover="this.src='img/avionfini-2.jpeg';
+                    " src="img/avion.jpg" /></p>
+            </div>
+
+            <div class="kodak">
+                <p><img alt="Survol" height="202px" width="326px" onmouseout="this.src='img/kodakBus.jpg';
+                    " onmouseover="this.src='img/kodakfini.png';
+                    " src="img/kodakBus.jpg" /></p>
+            </div>
+
+            <div class="day">
+                <p><img alt="Survol" height="342px" width="241px" onmouseout="this.src='img/Statue.jpg';
+                    " onmouseover="this.src='img/day.png';
+                    " src="img/Statue.jpg" /></p>
+            </div>
+
+            <div class="parfum">
+                <p><img alt="Survol" height="342px" width="241px" onmouseout="this.src='img/mec.jpg';
+                  " onmouseover="this.src='img/parfum.png';
+                  " src="img/mec.jpg" /></p>
+              </div>
+              </div>
+
+            </div> 
+          </div>
+      </article>
+    </div>
+    
+
+
+    <div id="compscroll"></div>
+    <div id="comps">
+
+      <article id="compsarticle">
+  <div id="bo">
+        <img src="img/Capture.png" width="1820px" height="980px">
+        </div>
+
+<!--
+ <div id="conteneurbig">
+
+        <div id="conteneur2">
+
+            <div class="photoshop">
+                <img src="img/photoshop.png" width="65px" height="65px">
+            </div>
+
+            <div class="illustrator">
+                <img src="img/illustrator.png" width="65px" height="65px">
+            </div>
+
+            <div class="premiere">
+                <img src="img/premiere.png" width="65px" height="65px">
+            </div>
+
+            <div class="htmlcss">
+                <img src="img/htmlcss.png" width="65px" height="65px">
+            </div>
+
+            <div class="r6">
+                <img src="img/r6.png" width="65px" height="65px">
+            </div>
+            
+            </div>
+
+            
+
+            <div id="conteneur3">
+
+                <div class="progress">
+                    <div class="progress-value"></div>
+                  </div>
+            
+                  <div class="progress2">
+                    <div class="progress-value2"></div>
+                  </div>
+            
+                  <div class="progress3">
+                    <div class="progress-value3"></div>
+                  </div>
+            
+                  <div class="progress4">
+                    <div class="progress-value4"></div>
+                  </div>
+            
+                  <div class="progress5">
+                    <div class="progress-value5"></div>
+                  </div>
+                  
+            </div>
+            
+            </div> 
+
+          -->
+
+      </article>
+      
+    </div>
+
+
+    
+      <div id="contactscroll"></div>
+    <div id="contacts">
+      <article id="contactarticle">
+
+        <div id="cv">
+          <a href="index.html" download="cvlettre.zip">
+          <img src="img/cv.png" height="60px" width="60px" alt="Téléchargez mon cv !" onclick="window.location='index.html'">
+          </a>
+        </div>
+
+        <div id="formulaire">
+          <h1>Me contacter </h1>
+          <form action="visu_messages.php">
+            <label for="nom">Nom & prénom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required="required">
+        
+            <label for="objet">Objet</label>
+            <input type="text" id="objet" name="objet" placeholder="L'objet de votre message" required="required">
+        
+            <label for="mail">Email</label>
+            <input id="mail" type="email" name="mail" placeholder="Votre email" required="required">
+        
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+        
+            
+            <input type="submit" value="Envoyer" name="ajouter">
+             
+          </form>
+        </div>
+
+        <div id="reseaux">
+
+      <a href="https://www.instagram.com/pierrema.desole__/">
+      <img src="img/instagram.png" height="60px" width="60px" title="Join me on instagram !">
+  </a>
+      <a href="https://www.facebook.com/profile.php?id=100075820950613">
+      <img src="img/facebook.png" height="60px" width="60px" title="Join me on Facebook !">
+  </a>
+      <a href="https://www.linkedin.com/in/pierre-marie-desole-bighelli-941999237/">
+      <img src="img/linkedin.png" height="60px" width="60px" title="Join me on Linkedin !">
+  </a>
+      <a href="https://twitter.com/Desole_PM">
+    <img src="img/twitter.png" height="53px" width="53px" title="Join me on twitter !">
+</a>
+ 
+
+        </div>
+      </article>
+</div>
+
+<div id="fin">
+  <h2>Design by pm</h2>
+  <h1>......................</h1>
+</div>
+
+<div class="enhaut">
+<img src="img/abc.png" height="50px" width="50px" alt="ça monte !">
+</div>
+
+<div class="switch">
+  <img src="img/switch.png" onclick="toggleTheme()" height="60px" width="50px" alt="mode nuit">
+  </div>
+
+  <!--
+<a href="login.php">
+<button class="wow" type="button">Connexion</button>
+</a>
+-->
+
+
+<script src="./script.js"></script>
+</body>
+</html>
